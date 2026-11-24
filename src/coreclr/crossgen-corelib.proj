@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.Build.NoTargets">
 
   <Import Project="$(WasmPInvokeModulesPropsPath)"
-          Condition="'$(TargetsWasm)' == 'true'" />
+          Condition="'$(TargetsWasmArch)' == 'true'" />
 
   <ItemGroup>
     <ProjectReference Include="$(CoreClrProjectRoot)/tools/aot/crossgen2/crossgen2_inbuild.csproj" OutputItemType="Crossgen2Files" />
